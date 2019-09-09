@@ -6,7 +6,6 @@ import './styles/index.scss';
 
 // FUNCTION = STATELESS
 // CALL = STATE FULL
-// USE CLASS FOR CONTENT
 
 function App() {
     return (
