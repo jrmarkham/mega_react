@@ -1,0 +1,124 @@
+@import './vars';
+.content{
+  display: inline-block;
+  font-size: $contentFontSize;
+  font-weight: $contentFontWeight;
+  padding: inherit;
+  width: 100%;
+  @media #{$xLarge} {
+    font-size: $contentFontSizeXL;
+  }
+  @media #{$large} {
+    font-size: $contentFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $contentFontSizeMD;
+  }
+  @media #{$small} {
+    font-size: $contentFontSizeSM;
+  }
+
+}
+
+
+.contentText{
+  position: relative;
+  height: auto;
+  width: 90%;
+  text-align: left;
+}
+
+.contentHeader{
+  position: relative;
+  height: auto;
+  width: 90%;
+  text-align: left;
+  font-weight: bold;
+  font-size: $menuFontSizeXL;
+  @media #{$large} {
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $menuFontSizeMD;
+  }
+  @media #{$small} {
+    font-size: $menuFontSizeSM;
+  }
+}
+
+a{
+  color: $linkColor;
+  &:hover {
+    color: $hoverColor;
+  }
+
+  &:visited {
+    color: $visitColor;
+  }
+}
+
+.contentLink{
+  position: relative;
+  height: auto;
+  text-align: left;
+  cursor: pointer;
+  color: $linkColor;
+  &:hover {
+    color: $hoverColor;
+  }
+
+  &:visited {
+    color: $visitColor;
+  }
+}
+
+
+.contentLeft{
+  position: relative;
+  display: inline-block;
+  text-align:right;
+  width: 25%;
+  height: auto;
+  @media #{$medium} {
+    width: 30%;
+  }
+  @media #{$small} {
+    left: 0%;
+    width: 35%;
+  }
+}
+
+.contentRightLink{
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  right: 40%;
+  width: 30%;
+  text-align:left;
+  height: auto;
+  color: $linkColor;
+  @media #{$medium} {
+    right: 25%;
+    width: 35%;
+  }
+  @media #{$small} {
+    right: 15%;
+    width: 40%;
+  }
+
+  &:hover {
+    color: $hoverColor;
+  }
+
+  &:visited {
+    color: $visitColor;
+  }
+}
+
+.contentImageFull {
+  width: 100%;
+}
+
+.contentImageSmall {
+  width: 10%
+}

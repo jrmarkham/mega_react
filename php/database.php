@@ -6,11 +6,11 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, ContentItem-Type
 
 // ** MySQL Settings ** //
 // ** The name of the database
-define('DB_NAME', 'jmarkham_me_data');
+define('DB_NAME', 'jmarkham_web_data');
 // ** MySQL database username
 define('DB_USER', 'jmarkham_me');
 //** MySQL database password
-define('DB_PASSWORD', 's7}YiFok6iCg');
+define('DB_PASSWORD', 'Hbk{Gsh93ni2');
 // ** MySQL hostname
 define('DB_HOST', 'localhost');
 ////// ** MySQL hostname

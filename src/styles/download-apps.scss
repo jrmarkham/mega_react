@@ -1,0 +1,58 @@
+@import './vars';
+
+.down-con{
+  width:100%;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+
+.down-app {
+  width: 25%;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.down-app-image{
+  width: 50%;
+}
+
+.down-app-text-top{
+  text-transform: uppercase;
+  @media #{$xLarge} {
+    font-size: $menuFontSizeXL;
+  }
+  @media #{$large} {
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $menuFontSizeMD;
+  }
+  @media #{$small} {
+    font-size: $menuFontSizeSM;
+  }
+}
+
+.down-app-text-bottom{
+  @media #{$xLarge} {
+    font-size: $contentFontSizeXL;
+  }
+  @media #{$large} {
+    font-size: $contentFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $contentFontSizeMD;
+  }
+  @media #{$small} {
+    font-size: $contentFontSizeSM;
+  }
+
+}
+.down-app-text{
+  text-align: center;
+
+}

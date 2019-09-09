@@ -1,0 +1,57 @@
+
+$fontStack: Arial, sans-serif;
+$fontColor:#fff;
+$bgColor:#000;
+
+
+/// MAIN COLOR SCHEME FOR LINKS
+$linkColor:lightblue;
+$visitColor:lightcoral;
+$hoverColor:lightskyblue;
+$actColor:lightcyan;
+
+// TEXT SIZE VARS --
+//default adjust on response
+// media queries -- not compiling
+$small: "(max-width: 768px)";
+$medium: "(min-width: 769px) and (max-width: 1024px)";
+$large: "(min-width: 1025px) and (max-width: 1400px)";
+$xLarge: "(min-width: 1401px)";
+
+
+/// VARIABLE SIZES
+$bigHeaderFontSize:36px;
+$menuFontSize:32px;
+$contentFontSize:30px;
+$lineHeight:1.5;
+$contentWidth:1600px;
+$imgWidth:1220px;
+// X-LARGE
+$bigHeaderFontSizeXL:24px;
+$menuFontSizeXL:20px;
+$contentFontSizeXL:18px;
+$lineHeightXL:1.25;
+$contentWidthXL:1200px;
+// LARGE
+$bigHeaderFontSizeLG:20px;
+$menuFontSizeLG:18px;
+$contentFontSizeLG:16px;
+$lineHeightLG:1;
+$contentWidthLG:800px;
+
+// MEDIUM
+$bigHeaderFontSizeMD:22px;
+$menuFontSizeMD:16px;
+$contentFontSizeMD:14px;
+$lineHeightMD:1;
+$contentWidthMD:700px;
+// SMALL
+$bigHeaderFontSizeSM:16px;
+$menuFontSizeSM:11px;
+$contentFontSizeSM:10px;
+$lineHeightSM:1;
+$contentWidthSM:500px;
+/// FONTS STYLES
+$bigHeaderFontWeight:bold;
+$menuFontWeight:bold;
+$contentFontWeight:normal;

@@ -1,13 +1,67 @@
+@import './vars';
+
+// MAIN IMAGE ANIMATION & VIDEO Display
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+  font:100% $fontStack;
+  color:$fontColor;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+.page{
+  resize: both;
+
+}
+.contentContainer {
+  opacity: 0;
+  animation-name: fadeUp;
+  animation-delay: 5s;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  width:90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  //border: solid 1px green;
+  padding: 30px;
+
+  @media #{$large} {
+    padding: 20px;
+  }
+  @media #{$medium} {
+    padding: 15px;
+  }
+  @media #{$small} {
+    padding: 10px;
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+
+      opacity: 1;
+    }
+  }
+}
+
+#appsList{
+  display: inline-block;
+  //border: solid 1px yellow;
+  width: 90%;
+  overflow-y: scroll;
+  height: 50%;
+  padding: 20px;
+  @media #{$large} {
+    padding: 15px;
+  }
+  @media #{$medium} {
+    padding: 10px;
+  }
+  @media #{$small} {
+    padding: 5px;
+  }
+
 }

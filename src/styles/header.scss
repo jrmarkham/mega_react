@@ -1,0 +1,28 @@
+@import './vars';
+.header {
+  top:0;
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+  background-image: url("../_images/mega.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  @media #{$large} {
+    height: 200px;
+  }
+  @media #{$medium} {
+    height: 150px;
+  }
+
+
+  @media #{$small} {
+    top: 0px;
+    height:75px;
+    margin-left: 5%;
+    margin-right:5%;
+    width: 90%;
+    font-size: $contentFontSizeSM;
+  }
+}

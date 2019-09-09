@@ -11,6 +11,9 @@
 # production
 /build
 
+# database info
+/php/database.php
+
 # misc
 .DS_Store
 .env.local

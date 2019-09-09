@@ -1,0 +1,78 @@
+@import './vars';
+
+.app{
+  //border: 2px solid red;
+  height: auto;
+  padding: inherit;
+
+}
+
+
+.iconDiv{
+  float: left;
+  cursor: pointer;
+}
+.imageIcon {
+  width: 150px;
+  height: auto;
+  @media #{$large} {
+    width: 100px;
+  }
+  @media #{$medium} {
+    width: 50px;
+  }
+
+  @media #{$small} {
+    width: 25px;
+  }
+}
+
+
+
+.appHeader {
+  top:0;
+  position: relative;
+  display: block;
+  //border: solid 1px orange;
+  width: calc(100% - 200px);
+  float: right;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: $menuFontSizeXL;
+  @media #{$large} {
+    width: calc(100% - 150px);
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    width: calc(100% - 75px);
+    font-size: $menuFontSizeMD;
+  }
+
+  @media #{$small} {
+    width: calc(100% - 50px);
+    text-transform: capitalize;
+    font-size: $menuFontSizeSM;
+  }
+}
+
+.appNav {
+  top:0;
+  display: inline-block;
+  //border: solid 1px green;
+  width: calc(100% - 200px);
+  float: right;
+  text-align: left;
+  @media #{$large} {
+    width: calc(100% - 150px);
+  }
+  @media #{$medium} {
+    width: calc(100% - 75px);
+  }
+
+  @media #{$small} {
+    width: calc(100% - 50px);
+    text-transform: capitalize;
+  }
+}
+
+

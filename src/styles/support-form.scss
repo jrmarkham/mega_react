@@ -1,0 +1,59 @@
+@import './vars';
+
+.form-container{
+  width: 100%;
+  display: block;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
+
+.form-header{
+  width: 80%;
+  margin-left: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  @media #{$xLarge} {
+    font-size: $menuFontSizeXL;
+  }
+  @media #{$large} {
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $menuFontSizeMD;
+  }
+  @media #{$small} {
+    font-size: $menuFontSizeSM;
+  }
+}
+
+.form-line{
+  top: 0;
+  //border: solid 1px green;
+  width: 100%;
+
+}
+
+.form-label{
+  //top: 0;
+  //border: solid 1px blue;
+  display: inline-block;
+  width: 20%;
+  margin-left: 5%;
+  text-align: right;
+float: left;
+}
+
+.form-element{
+  //top: 0;
+  //border: solid 1px yellow;
+  display: inline-block;
+   width: 70%;
+  float: right;
+  text-align: left;
+}
+
+.form-clear{
+  top: 0;
+  clear: both;
+}

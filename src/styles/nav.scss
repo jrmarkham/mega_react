@@ -1,0 +1,73 @@
+@import './vars';
+.nav{
+ display: inline-block;
+  margin-left: 60%;
+  width: 40%;
+  @media #{$medium} {
+    margin-left: 50%;
+    width: 50%;
+    font-size: $contentFontSizeMD;
+  }
+  @media #{$small} {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    font-size: $contentFontSizeSM;
+  }
+}
+
+
+.navItem {
+  display: inline;
+  margin-right: 5px;
+  font-size: $menuFontSize;
+  font-weight: $menuFontWeight;
+  cursor: pointer;
+  text-transform: uppercase;
+  @media #{$xLarge} {
+    font-size: $menuFontSizeXL;
+  }
+  @media #{$large} {
+    //  margin-left: 3px;
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    //margin-left: 2px;
+    width: 80%;
+    font-size: $menuFontSizeMD;
+  }
+  @media #{$small} {
+    margin-left: 2px;
+    text-transform: lowercase;
+    width: 100%;
+    font-size: $contentFontSizeSM;
+  }
+
+  &:hover {
+    color: $hoverColor;
+  }
+
+  &:visited {
+    color: $visitColor;
+  }
+}
+
+
+.lineItem{
+  display: inline;
+  margin-left: 5px;
+  font-size: $menuFontSize;
+  font-weight: $menuFontWeight;
+  @media #{$xLarge} {
+    font-size: $menuFontSizeXL;
+  }
+  @media #{$large} {
+    font-size: $menuFontSizeLG;
+  }
+  @media #{$medium} {
+    font-size: $menuFontSizeMD;
+  }
+  @media #{$small} {
+    display: none;
+  }
+}
