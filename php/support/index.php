@@ -38,8 +38,8 @@ if(isset($_POST['submit'])) {
     $reportResponse = "Your submission has been received and we will contact you shortly.\r\nHere is a copy of your submission:\r\n" . $reportMessage;
 
 
-    $subject = "Form submission";
-    $subjectResponse = "Copy of your form submission";
+    $subject = "Form submission:: $app";
+    $subjectResponse = "Copy of your form submission for $app";
     $headers = "From:" . $to;
 
 

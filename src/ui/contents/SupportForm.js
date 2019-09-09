@@ -10,7 +10,9 @@ class SupportForm extends Component {
         this.errorReport += '\nPlease input a valid email. ';
         this.formName = `${props.code}Support`;
         this.supportTitle = `Support for ${props.name}`;
+        this.appName = props.name;
         this.state = {
+            app:this.appName,
             name: '',
             email: '',
             phone: '',
@@ -32,6 +34,7 @@ class SupportForm extends Component {
 
     clearState() {
         this.setState({
+            app:this.appName,
             name: '',
             email: '',
             phone: '',
