@@ -55,7 +55,7 @@ class DataProvider extends Component {
             return;
         }
         const code = 'main' == level ? 'main': this.apps[num].code;
-        this.navHandler(code, item, num, false);
+        this.navHandler(code, item, num);
     }
 
     getRoute(){
@@ -64,7 +64,7 @@ class DataProvider extends Component {
     }
 
 
-    navHandler(code, item, num, refresh) {
+    navHandler(code, item, num) {
         const parseItem = (item === 'game help') ? 'game_help' : item;
         // alert('nav item' + navItem);
         // create current_content array //
@@ -106,7 +106,7 @@ class DataProvider extends Component {
         this.setState({
             currentContent: content,
             currentLevel: code,
-            route: refresh ? '?level=' + level + '&type=' + parseItem + '&page=' + num : null
+            route: '?level=' + level + '&type=' + parseItem + '&page=' + num
         });
     }
 
