@@ -141,6 +141,7 @@ function get_apps_data($con, $query)
             'ios' => $row['ios_link'],
             'android' => $row['android_link'],
             'amazon' => $row['amazon_link'],
+            'amazon_note' => filter_var($row['amazon_note'], FILTER_VALIDATE_BOOLEAN),
             'faq' => filter_var($row['faq'], FILTER_VALIDATE_BOOLEAN),
             'help' => filter_var($row['help'], FILTER_VALIDATE_BOOLEAN),
             'media' => filter_var($row['media'], FILTER_VALIDATE_BOOLEAN),

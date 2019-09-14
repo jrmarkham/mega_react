@@ -37,7 +37,7 @@ const getComponent = function (item, idx, code, click) {
             return <EmailLink key={idx} keyId={idx} link={item.link} content={item.content}/>;
         case 'download':
             return <DownloadApps key={idx} keyId={idx} code={code} ios={item.ios} android={item.android} amazon={item.amazon}
-                                 appName={item.appName}/>;
+                                 amazonNote={item.amazonNote} appName={item.appName}/>;
         case 'support':
             return <SupportForm key={idx} keyId={idx} code={code} name={item.name}/>;
         default:

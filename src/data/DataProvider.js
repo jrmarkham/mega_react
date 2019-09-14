@@ -91,7 +91,8 @@ class DataProvider extends Component {
                         amazon: this.apps[num].amazon,
                         ios: this.apps[num].ios,
                         android: this.apps[num].android,
-                        appName: this.apps[num].app_name
+                        appName: this.apps[num].app_name,
+                        amazonNote:this.apps[num].amazon_note
                     }];
                     break;
                 default:

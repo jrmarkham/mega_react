@@ -2,7 +2,6 @@ import React from 'react'
 import '../../styles/download-apps.scss'
 const images = require.context('../../_images', true);
 
-
 function getAppDiv(link, code, type, appName, storeName, notAvailable) {
     const image =  images(`./appIcons/${code}/${type}.png`);
     switch (link){
@@ -10,8 +9,17 @@ function getAppDiv(link, code, type, appName, storeName, notAvailable) {
         case 'na':return <div className="down-app"><img className="down-app-image" alt={type} src={image} /><div className="down-app-text"><span className="down-app-text-top">{appName}</span><br/><span className="down-app-text-bottom">{notAvailable}</span></div></div>
         default:return <div className="down-app"><a href={link} target='_blank' rel='noopener noreferrer'><img className="down-app-image" alt={type} src={image} /><div className='down-app-text'><span className="down-app-text-top">{appName}</span><br/><span className="down-app-text-bottom">{storeName}</span></div></a></div>
     }
-
 }
+
+function getAmazonNote(note) {
+    if(note===false){
+        return '';
+    }
+
+    return <p><br />Note: The Amazon app is a paid app. If you want to use the ad driven version then side load the Android version from the Google Play Store.</p>;
+}
+
+
 
 
 function DownloadApps (props) {
@@ -29,10 +37,12 @@ function DownloadApps (props) {
     const amazonStore = 'on Amazon';
     const amazonStoreNa = 'Coming Soon (Amazon)';
     const amazonDiv =  getAppDiv(amazon, code, 'amazon', appName, amazonStore, amazonStoreNa);
+    const amNote = props.amazonNote;
+    const amazonNote = getAmazonNote(amNote);
     return (
 
         <div className="down-con">
-            {iosDiv}{androidDiv}{amazonDiv}
+            {iosDiv}{androidDiv}{amazonDiv}{amazonNote}
         </div>
     )
 
