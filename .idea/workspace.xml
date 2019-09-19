@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da8439ea-b41c-4157-91d9-76b08681f2fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/DataProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/DataProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/contents/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/contents/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/contents/DownloadApps.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/contents/DownloadApps.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ui/contents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_images/appIcons/dr" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,19 +65,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dr" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dk" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons" />
+      <recent name="$PROJECT_DIR$/src/ui/contents" />
+      <recent name="$PROJECT_DIR$/php" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/ui/contents" />
       <recent name="$PROJECT_DIR$/php/form" />
       <recent name="$PROJECT_DIR$/src/_images/tsbf" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ui/contents" />
-      <recent name="$PROJECT_DIR$/php" />
-      <recent name="$PROJECT_DIR$/src/styles" />
-      <recent name="$PROJECT_DIR$/src/_images/appIcons/goq" />
-      <recent name="$PROJECT_DIR$/src/ui" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,6 +126,7 @@
       <workItem from="1568491942488" duration="57000" />
       <workItem from="1568492003280" duration="1761000" />
       <workItem from="1568500164658" duration="72000" />
+      <workItem from="1568914881861" duration="952000" />
     </task>
     <servers />
   </component>
