@@ -24,7 +24,8 @@ const getComponent = function (item, idx, code, click) {
         case 'break':
             return <br key={idx} />;
         case 'line':
-            return <hr key={idx} />;
+            return <hr key={idx} align="left" className="contentHR"/>;
+
         case 'news_link':
             return <NewsLink key={idx} keyId={idx} content={item.content} num={item.id - 1} click={click}/>
         case 'link_name_short':
@@ -36,8 +37,7 @@ const getComponent = function (item, idx, code, click) {
         case 'email':
             return <EmailLink key={idx} keyId={idx} link={item.link} content={item.content}/>;
         case 'download':
-            return <DownloadApps key={idx} keyId={idx} code={code} ios={item.ios} android={item.android} amazon={item.amazon}
-                                 amazonNote={item.amazonNote} appName={item.appName}/>;
+            return <DownloadApps key={idx} keyId={idx} code={code} ios={item.ios} android={item.android} amazon={item.amazon} amazonNote={item.amazonNote} appName={item.appName}/>;
         case 'support':
             return <SupportForm key={idx} keyId={idx} code={code} name={item.name}/>;
         default:

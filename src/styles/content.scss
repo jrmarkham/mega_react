@@ -20,12 +20,46 @@
 
 }
 
+.contentHR{
+  width:60%;
+  horiz-align: left;
+  @media #{$large} {
+    width: 70%;
+    font-size: $contentFontSizeLG;
+  }
+  @media #{$medium} {
+    width: 75%;
+    font-size: $contentFontSizeMD;
+  }
+  @media #{$small} {
+    width: 80%;
+    font-size: $contentFontSizeSM;
+  }
+
+}
+
 
 .contentText{
   position: relative;
   height: auto;
-  width: 90%;
   text-align: left;
+  width: 75%;
+
+  @media #{$xLarge} {
+    font-size: $contentFontSizeXL;
+  }
+  @media #{$large} {
+    width: 80%;
+    font-size: $contentFontSizeLG;
+  }
+  @media #{$medium} {
+    width: 85%;
+    font-size: $contentFontSizeMD;
+  }
+  @media #{$small} {
+    width: 90%;
+    font-size: $contentFontSizeSM;
+  }
 }
 
 .contentHeader{
