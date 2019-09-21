@@ -16,13 +16,11 @@
   }
 }
 
-
 .navItem {
   display: inline;
   margin-right: 5px;
   font-size: $menuFontSize;
   font-weight: $menuFontWeight;
-  cursor: pointer;
   text-transform: uppercase;
   @media #{$xLarge} {
     font-size: $menuFontSizeXL;
@@ -42,7 +40,11 @@
     width: 100%;
     font-size: $contentFontSizeSM;
   }
+}
 
+
+.navItemClick {
+  cursor: pointer;
   &:hover {
     color: $hoverColor;
   }
@@ -51,6 +53,7 @@
     color: $visitColor;
   }
 }
+
 
 
 .lineItem{
