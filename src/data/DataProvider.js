@@ -57,6 +57,7 @@ class DataProvider extends Component {
                 currentContent: this.content['about'],
                 currentLevel: 'main'
             });
+
             return;
         }
         const code = 'main' === level ? 'main': this.apps[num].code;
@@ -71,6 +72,7 @@ class DataProvider extends Component {
 
     navHandler(code, item, num) {
         const parseItem = (item === 'game help') ? 'game_help' : item;
+        this.appsDisplay = this.apps;
         // alert('nav item' + navItem);
         // create current_content array //
         // const num = 0; // use for news
@@ -114,11 +116,11 @@ class DataProvider extends Component {
         }
 
         // reoder apps
-        if(level === 'product'){
-            this.appsDisplay = [];
-            this.appsDisplay.push(this.apps[num]);
-            this.apps.forEach((item, i) =>{if(i !== num) this.appsDisplay.push(item)});
-        }
+         if(level === 'product'){
+             this.appsDisplay = [];
+             this.appsDisplay.push(this.apps[num]);
+            this.apps.forEach((item, index) =>{if(num != index) this.appsDisplay.push(item)});
+         }
 
 
 

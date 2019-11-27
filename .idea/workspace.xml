@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da8439ea-b41c-4157-91d9-76b08681f2fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/amazon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/amazon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/android.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/android.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-1024.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-114.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-114.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-120.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-120.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-144.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/ios.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/ios.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/DataProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/DataProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +137,9 @@
       <workItem from="1574029346827" duration="2844000" />
       <workItem from="1574101944300" duration="1000" />
       <workItem from="1574885345506" duration="469000" />
-      <workItem from="1574885887413" duration="4201000" />
+      <workItem from="1574885887413" duration="4341000" />
+      <workItem from="1574892505652" duration="474000" />
+      <workItem from="1574893951128" duration="970000" />
     </task>
     <servers />
   </component>
