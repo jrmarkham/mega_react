@@ -132,10 +132,12 @@ function get_apps_data($con, $query)
 {
     $result = mysqli_query($con, $query);
     $data = array();
+    $num = 0;
     while ($row = mysqli_fetch_array($result)) {
 
         $data[] = array(
             'name' => $row['name'],
+            'num' => $num,
             'app_name' => $row['app_name'],
             'code' => $row['code'],
             'ios' => $row['ios_link'],
@@ -146,10 +148,8 @@ function get_apps_data($con, $query)
             'help' => filter_var($row['help'], FILTER_VALIDATE_BOOLEAN),
             'media' => filter_var($row['media'], FILTER_VALIDATE_BOOLEAN),
             'game_help' => filter_var( $row['game_help'], FILTER_VALIDATE_BOOLEAN)
-
-
         );
-
+        $num++;
     }
     return $data;
 }

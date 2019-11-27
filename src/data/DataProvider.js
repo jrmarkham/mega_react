@@ -18,6 +18,7 @@ class DataProvider extends Component {
         this.dataURL = host.includes('localhost')? "http://localhost:8888" : "https://mega.markhamenterprises.com/data-php/";
         this.nav = [];
         this.apps = [];
+        this.appsDisplay = [];
         this.content = {};
         this.newsContent = [];
         this.navHandler = this.navHandler.bind(this);
@@ -29,15 +30,19 @@ class DataProvider extends Component {
             event.preventDefault();
             this.routePage();
         };
+        window.scrollTo(0, 0);
     }
 
+
+    componentDidUpdate() {
+        window.scrollTo(0, 0);
+    }
 
     getQueryStringItem(field) {
         const href = window.location.href;
         const reg = RegExp('[?&]' + field + '=([^&#]*)', 'i');
         const string = reg.exec(href);
         return string ? string[1] : null;
-
     }
 
 
@@ -54,7 +59,7 @@ class DataProvider extends Component {
             });
             return;
         }
-        const code = 'main' == level ? 'main': this.apps[num].code;
+        const code = 'main' === level ? 'main': this.apps[num].code;
         this.navHandler(code, item, num);
     }
 
@@ -101,7 +106,21 @@ class DataProvider extends Component {
                     content = this.content[appItem];
                     break;
             }
+
+
+
+            // this.apps;
+
         }
+
+        // reoder apps
+        if(level === 'product'){
+            this.appsDisplay = [];
+            this.appsDisplay.push(this.apps[num]);
+            this.apps.forEach((item, i) =>{if(i !== num) this.appsDisplay.push(item)});
+        }
+
+
 
 
         this.setState({
@@ -165,6 +184,12 @@ class DataProvider extends Component {
                     this.content[key] = data[key];
 
                 }
+
+
+
+
+
+                this.appsDisplay = this.apps;
                 this.routePage();
                 this.setState({
                     loading: false
@@ -172,13 +197,14 @@ class DataProvider extends Component {
             });
     }
 
+
     render() {
          return (
             <DataContext.Provider
                 value={{
                     loading: this.state.loading,
                     nav: this.nav,
-                    apps: this.apps,
+                    apps: this.appsDisplay,
                     currentLevel: this.state.currentLevel,
                     currentContent: this.state.currentContent,
                     navHandler: this.navHandler

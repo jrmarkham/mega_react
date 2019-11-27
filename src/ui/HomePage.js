@@ -24,7 +24,7 @@ function HomePage() {
                                  click={context.navHandler} code="main"/>
                         <div id="appsList">
                             {context.apps.map((app, idx) => (
-                                <AppItem key={idx} appData={app} appIdx={idx}
+                                <AppItem key={idx} appData={app} appIdx={app.num}
                                          content={(context.currentLevel === app.code) ? context.currentContent : []}
                                          click={context.navHandler}/>
                             ))

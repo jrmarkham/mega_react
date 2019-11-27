@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="da8439ea-b41c-4157-91d9-76b08681f2fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/apps/AppNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/apps/AppNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/amazon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/amazon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/android.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/android.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-114.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-120.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-144.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/icon-144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_images/appIcons/dr/ios.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_images/appIcons/dr/ios.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/DataProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/DataProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_images/appIcons/dr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_images/appIcons/dd" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -69,18 +77,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/_images/appIcons/dr" />
-      <recent name="$PROJECT_DIR$/src/_images/appIcons/dk" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dd" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dhh" />
       <recent name="$PROJECT_DIR$/src/_images/appIcons" />
-      <recent name="$PROJECT_DIR$/src/ui/contents" />
-      <recent name="$PROJECT_DIR$/php" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dw" />
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dr" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/_images/appIcons/dhh" />
       <recent name="$PROJECT_DIR$/src/ui/contents" />
       <recent name="$PROJECT_DIR$/php/form" />
       <recent name="$PROJECT_DIR$/src/_images/tsbf" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -132,6 +140,14 @@
       <workItem from="1568914881861" duration="1529000" />
       <workItem from="1569001822520" duration="3696000" />
       <workItem from="1569088435204" duration="1232000" />
+      <workItem from="1571178607464" duration="18152000" />
+      <workItem from="1572393222641" duration="217000" />
+      <workItem from="1572393463645" duration="1144000" />
+      <workItem from="1573863139835" duration="2340000" />
+      <workItem from="1574029346827" duration="2844000" />
+      <workItem from="1574101944300" duration="1000" />
+      <workItem from="1574885345506" duration="469000" />
+      <workItem from="1574885887413" duration="4201000" />
     </task>
     <servers />
   </component>
