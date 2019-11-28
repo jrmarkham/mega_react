@@ -3,7 +3,6 @@ import {Redirect} from "react-router-dom";
 import DataContext from "./DataContext";
 
 
-
 class DataProvider extends Component {
     constructor(props) {
         super(props);
@@ -15,10 +14,9 @@ class DataProvider extends Component {
         };
         // immutables
         const host = window.location.host;
-        this.dataURL = host.includes('localhost')? "http://localhost:8888" : "https://mega.markhamenterprises.com/data-php/";
+        this.dataURL = host.includes('localhost') ? "http://localhost:8888" : "https://mega.markhamenterprises.com/data-php/";
         this.nav = [];
         this.apps = [];
-        this.appsDisplay = [];
         this.content = {};
         this.newsContent = [];
         this.navHandler = this.navHandler.bind(this);
@@ -46,12 +44,11 @@ class DataProvider extends Component {
     }
 
 
-
     routePage() {
         const level = this.getQueryStringItem('level');
         const item = this.getQueryStringItem('type');
         const num = this.getQueryStringItem('page');
-        if(null == level || null == item || this.apps.length < 1){
+        if (null == level || null == item || this.apps.length < 1) {
             // set default content
             this.setState({
                 currentContent: this.content['about'],
@@ -60,19 +57,23 @@ class DataProvider extends Component {
 
             return;
         }
-        const code = 'main' === level ? 'main': this.apps[num].code;
+        const code = 'main' === level ? 'main' : this.apps[num].code;
         this.navHandler(code, item, num);
     }
 
-    getRoute(){
-        if(this.state.loading || this.state.route == null)return;
+    getRoute() {
+        if (this.state.loading || this.state.route == null) return;
         return <Redirect to={this.state.route}/>
     }
 
 
     navHandler(code, item, num) {
+
         const parseItem = (item === 'game help') ? 'game_help' : item;
-        this.appsDisplay = this.apps;
+        const idx = this.apps.findIndex(item => item.num ==num);
+
+
+
         // alert('nav item' + navItem);
         // create current_content array //
         // const num = 0; // use for news
@@ -89,17 +90,18 @@ class DataProvider extends Component {
             level = 'product';
             switch (item) {
                 case 'support':
-                    content = [{type: 'support', name: this.apps[num].name}];
+
+                    content = [{type: 'support', name: this.apps[idx].name }]; // this.apps[idx].name }];
                     break;
                 case 'download':
                     //content = [{type:'text', content:'create download page for each app. w/ links'}];
                     content = [{
                         type: 'download',
-                        amazon: this.apps[num].amazon,
-                        ios: this.apps[num].ios,
-                        android: this.apps[num].android,
-                        appName: this.apps[num].app_name,
-                        amazonNote:this.apps[num].amazon_note
+                        amazon: this.apps[idx].amazon,
+                        ios: this.apps[idx].ios,
+                        android: this.apps[idx].android,
+                        appName: this.apps[idx].app_name,
+                        amazonNote: this.apps[idx].amazon_note
                     }];
                     break;
                 default:
@@ -110,22 +112,22 @@ class DataProvider extends Component {
             }
 
 
-
             // this.apps;
 
         }
-
         // reoder apps
-         if(level === 'product'){
-             this.appsDisplay = [];
-             this.appsDisplay.push(this.apps[num]);
-            this.apps.forEach((item, index) =>{if(num != index) this.appsDisplay.push(item)});
-         }
+        if (level === 'product') {
+               const topItem = this.apps[idx];
+                this.apps.splice(idx, 1);
+                this.apps.unshift(topItem);
+        }
+
 
 
 
 
         this.setState({
+            apps: this.apps,
             currentContent: content,
             currentLevel: code,
             route: '?level=' + level + '&type=' + parseItem + '&page=' + num
@@ -187,11 +189,6 @@ class DataProvider extends Component {
 
                 }
 
-
-
-
-
-                this.appsDisplay = this.apps;
                 this.routePage();
                 this.setState({
                     loading: false
@@ -201,12 +198,12 @@ class DataProvider extends Component {
 
 
     render() {
-         return (
+        return (
             <DataContext.Provider
                 value={{
                     loading: this.state.loading,
                     nav: this.nav,
-                    apps: this.appsDisplay,
+                    apps: this.apps,
                     currentLevel: this.state.currentLevel,
                     currentContent: this.state.currentContent,
                     navHandler: this.navHandler

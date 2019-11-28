@@ -10,6 +10,8 @@ import Links, {EmailLink, LinksName, LinksNameShort} from "../contents/Links";
 const images = require.context('../../_images', true);
 const getComponent = function (item, idx, code, click) {
     // CONVERT TO REACT COMPONENTS FOR INSERTS //
+
+
     switch (item.type) {
         case 'text':
             return <Text key={idx} keyId={idx} content={item.content} class="contentText"/>

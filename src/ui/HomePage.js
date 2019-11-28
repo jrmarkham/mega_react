@@ -23,8 +23,8 @@ function HomePage() {
                         <Content content={(context.currentLevel === 'main') ? context.currentContent : []}
                                  click={context.navHandler} code="main"/>
                         <div id="appsList">
-                            {context.apps.map((app, idx) => (
-                                <AppItem key={idx} appData={app} appIdx={app.num}
+                            {context.apps.map((app) => (
+                                <AppItem key={app.num} appData={app} appIdx={app.num}
                                          content={(context.currentLevel === app.code) ? context.currentContent : []}
                                          click={context.navHandler}/>
                             ))
